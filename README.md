@@ -1,4 +1,4 @@
-# MOST UPDATED (needed to make changes to UI!)-portfolio-management-application-
+# MOST UPDATED web server project-
 README 
 
 This project was a great way for me to learn more about C and how servers work.
