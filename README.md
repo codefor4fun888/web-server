@@ -9,70 +9,75 @@ deeper understanding:
 
 It’s built on raw sockets no frameworks, no shortcuts. This project is a lightweight HTTP server written entirely in C using raw TCP sockets. It sets up a listening socket, waits for incoming client connections, prints the incoming HTTP request, and sends back a basic HTML response.
 
+How to Run This Web Server:
 
 Clone or Download the Project
-git clone https://github.com/yourusername/your-repo-name.git
 
+git clone https://github.com/codefor4fun888/web-server.git
+cd web-server
 
-Or download the ZIP and extract it.
+Or download ZIP:
 
-Make sure the folder contains:
+Click Code - > Download ZIP
+
+Extract the folder
+
+Open the extracted directory
+
+Your folder should contain:
 
 server.c
 server.h
 test.c
 main.c
 
-Open a Terminal in the Project Directory
+2. Open a Terminal in the Project Directory
+Windows (PowerShell):
+cd "path\to\web-server"
 
-On Windows (PowerShell):
+macOS / Linux:
+cd path/to/web-server
 
-cd "path\to\the\project"
+3. Compile the Server
+Windows (MinGW / TDM-GCC)
 
-On macOS/Linux:
-
-cd path/to/the/project
-
-Compile the Server -
-Windows (MinGW or TDM-GCC)
-
-You must link against the Winsock library:
+You must link the Winsock library:
 
 gcc server.c test.c main.c -lws2_32 -o server.exe
 
-Linux / macOS
+macOS / Linux
 gcc server.c test.c main.c -o server
 
 
-If the command runs without errors, compilation succeeded!
+If the command prints no errors, compilation succeeded.
 
-Run the Server
+4. Run the Server
 Windows
 .\server.exe
 
-Linux / macOS
+macOS / Linux
 ./server
 
 
-You should see:
+You should now see:
 
 ====== SERVER RUNNING (CTRL+C to stop) ======
 ====== WAITING FOR CONNECTION ======
 
-Open in Your Browser
+5. Open the Server in Your Browser
 
 Navigate to:
 
 http://localhost:8080
 
 
-(Or port 80 if you changed it.)
+Or port 80 if you changed the port number in the code.
 
-You will see the HTML response:
+You’ll see the HTML response:
 
 Mono Deus — Server Alive!!!
 
-to stop the Server
+6. Stop the Server
 
 Press:
 
